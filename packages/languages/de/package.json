@@ -1,5 +1,5 @@
 {
-  "name": "@zxcvbn-ts/language-de",
+  "name": "@metamaze/zxcvbn-language-de",
   "version": "3.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

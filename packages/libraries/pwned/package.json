@@ -1,5 +1,5 @@
 {
-  "name": "@zxcvbn-ts/matcher-pwned",
+  "name": "@metamaze/zxcvbn-matcher-pwned",
   "version": "2.1.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -20,7 +20,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@zxcvbn-ts/core": "^3.0.0"
+    "@metamaze/zxcvbn-core": "^3.0.0"
   },
   "keywords": [
     "pwned",

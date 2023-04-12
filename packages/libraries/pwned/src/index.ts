@@ -1,5 +1,5 @@
 // @ts-ignore
-import { Matcher, Options } from '@zxcvbn-ts/core'
+import { Matcher, Options } from '@metamaze/zxcvbn-core'
 import MatchPwned from './matching'
 import scoring from './scoring'
 import FeedbackFactory from './feedback'

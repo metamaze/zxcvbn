@@ -1,7 +1,7 @@
 import fs from 'fs'
 import byline from 'byline'
 import sprintfClass from 'sprintf-js'
-import { MatchExtended } from '@zxcvbn-ts/core/src/types'
+import { MatchExtended } from '@metamaze/zxcvbn-core/src/types'
 import Matching from '../../packages/libraries/main/src/Matching'
 import estimateGuesses from '../../packages/libraries/main/src/scoring/estimate'
 import { zxcvbnOptions } from '../../packages/libraries/main/src/Options'

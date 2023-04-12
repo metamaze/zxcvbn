@@ -1,5 +1,5 @@
 // @ts-ignore
-import { Options } from '@zxcvbn-ts/core'
+import { Options } from '@metamaze/zxcvbn-core'
 
 export default (options: Options) => {
   return () => {

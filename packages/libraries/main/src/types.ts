@@ -167,11 +167,11 @@ export interface OptionsGraph {
 
 export interface OptionsType {
   /**
-   * @description Defines an object with a key value match to translate the feedback given by this library. The default values are plain keys so that you can use your own i18n library. Already implemented language can be found with something like @zxcvbn-ts/language-en.
+   * @description Defines an object with a key value match to translate the feedback given by this library. The default values are plain keys so that you can use your own i18n library. Already implemented language can be found with something like @metamaze/zxcvbn-language-en.
    */
   translations?: TranslationKeys
   /**
-   * @description Defines keyboard layouts as an object which are used to find sequences. Already implemented layouts can be found in @zxcvbn-ts/language-common
+   * @description Defines keyboard layouts as an object which are used to find sequences. Already implemented layouts can be found in @metamaze/zxcvbn-language-common
    */
   graphs?: OptionsGraph
   /**
@@ -179,11 +179,11 @@ export interface OptionsType {
    */
   l33tTable?: OptionsL33tTable
   /**
-   * @description Define dictionary that should be used to check against. The matcher will search the dictionaries for similar password with l33t speak and reversed words. The recommended sets are found in @zxcvbn-ts/language-common and @zxcvbn-ts/language-en.
+   * @description Define dictionary that should be used to check against. The matcher will search the dictionaries for similar password with l33t speak and reversed words. The recommended sets are found in @metamaze/zxcvbn-language-common and @metamaze/zxcvbn-language-en.
    */
   dictionary?: OptionsDictionary
   /**
-   * @description Defines if the levenshtein algorithm should be used. This will be only used on the complete password and not on parts of it. This will decrease the calcTime a bit but will significantly improve the password check. The recommended sets are found in @zxcvbn-ts/language-common and @zxcvbn-ts/language-en.
+   * @description Defines if the levenshtein algorithm should be used. This will be only used on the complete password and not on parts of it. This will decrease the calcTime a bit but will significantly improve the password check. The recommended sets are found in @metamaze/zxcvbn-language-common and @metamaze/zxcvbn-language-en.
    * @default false
    */
   useLevenshteinDistance?: boolean

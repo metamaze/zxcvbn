@@ -1,4 +1,4 @@
-import { zxcvbnOptions } from '@zxcvbn-ts/core/src'
+import { zxcvbnOptions } from '@metamaze/zxcvbn-core/src'
 import { matcherPwnedFactory } from '../src'
 
 const fetch = jest.fn(async () => ({
