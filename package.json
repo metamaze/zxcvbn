@@ -9,10 +9,10 @@
   "description": "Realistic password strength estimation written in typescript",
   "author": "zxcvbn-ts",
   "license": "MIT",
-  "homepage": "https://github.com/zxcvbn-ts/zxcvbn",
+  "homepage": "https://github.com/metamaze/zxcvbn",
   "repository": {
     "type": "git",
-    "url": "git@github.com:zxcvbn-ts/zxcvbn.git"
+    "url": "git@github.com:metamaze/zxcvbn.git"
   },
   "files": [],
   "prettier": "./prettier.js",
@@ -22,7 +22,7 @@
     "typecheck": "tsc --noEmit",
     "test": "jest --coverage",
     "changed": "lerna changed",
-    "lerna-publish": "yarn build && lerna publish --conventional-commits -y",
+    "lerna-publish": "lerna publish --conventional-commits -y",
     "generate:languageData": "yarn start-ts-file ./data-scripts/generate.ts",
     "generate:deduplicate": "yarn start-ts-file ./data-scripts/deduplicate.ts",
     "wikipediaExtractor": "yarn start-ts-file ./data-scripts/wikiExtractor/index.ts ./data-scripts/extracts",
