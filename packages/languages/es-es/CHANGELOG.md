@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 4.0.0 (2023-04-12)
+
+### Bug Fixes
+
+- **es-es:** resolve wrong sequences translation ([#141](https://github.com/zxcvbn-ts/zxcvbn/issues/141)) ([f2b3455](https://github.com/zxcvbn-ts/zxcvbn/commit/f2b345522971c8a08b13d745c8c5f7017ea2b0bf))
+
+- feat!: makes language packages tree shakeable (#176) ([3be6ae2](https://github.com/zxcvbn-ts/zxcvbn/commit/3be6ae2ae3f4ff7ade756df50c60274cbc2b0e20)), closes [#176](https://github.com/zxcvbn-ts/zxcvbn/issues/176) [#175](https://github.com/zxcvbn-ts/zxcvbn/issues/175)
+
+### Features
+
+- **dictionary:** add filter/splitter for compount names ([#180](https://github.com/zxcvbn-ts/zxcvbn/issues/180)) ([7de36c4](https://github.com/zxcvbn-ts/zxcvbn/commit/7de36c46872658e72849916a2850ca23352c6144))
+- **language:** add es-es wikipedia ([9ffeed2](https://github.com/zxcvbn-ts/zxcvbn/commit/9ffeed21bf2668299707f352ad27e4c068ba4a3b))
+- **language:** add Spanish language pack ([#82](https://github.com/zxcvbn-ts/zxcvbn/issues/82)) ([e6ef77f](https://github.com/zxcvbn-ts/zxcvbn/commit/e6ef77f307f9aaec0ff515c4f7ca59b5ef5d72a0))
+- **languages:** update dictionaries ([7f67d3a](https://github.com/zxcvbn-ts/zxcvbn/commit/7f67d3a71ef3b1136fc965c21d9febbfa3e74193))
+- **project:** Add HaveIBeenPwned matcher ([#66](https://github.com/zxcvbn-ts/zxcvbn/issues/66)) ([5c4141c](https://github.com/zxcvbn-ts/zxcvbn/commit/5c4141cd34f6566fe753ce76572f74bb8229b414))
+
+### Reverts
+
+- Revert "Publish" ([e266524](https://github.com/zxcvbn-ts/zxcvbn/commit/e266524f4fd25684ae9dded81593e7e04a1eef97))
+
+### BREAKING CHANGES
+
+- Language packages no longer has a default export.
+
+Instead of importing language packages with
+`import package from '@zxcvbn-ts/language-en'`
+
+You will now have to import it either like this
+`import { dictionary, translation } from '@zxcvbn-ts/language-en'`
+
+or like this
+`import * as package from '@zxcvbn-ts/language-en'`
+
+The reason for the change is so that you can tree shake the
+dictionary and translations.
+
 # 3.0.0 (2023-04-12)
 
 ### Bug Fixes

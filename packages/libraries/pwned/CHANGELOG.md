@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 2.2.0 (2023-04-12)
+
+### Bug Fixes
+
+- **pwned:** add missing check ([5f6dbc5](https://github.com/zxcvbn-ts/zxcvbn/commit/5f6dbc585b32023d6a8c1317cbfcdcec568c2c52))
+- **pwned:** add missing props ([0f59ca5](https://github.com/zxcvbn-ts/zxcvbn/commit/0f59ca5aea88763920f31859ad992135fd4c6df1))
+- **pwned:** catch pwned errors and return false ([a42483c](https://github.com/zxcvbn-ts/zxcvbn/commit/a42483c57a2d91f92177d9ce2058ace08573a952))
+- **pwned:** resolve paths so they are usable ([d5737aa](https://github.com/zxcvbn-ts/zxcvbn/commit/d5737aa82ddea0928db4997f587ceee302ff79a3))
+- **pwned:** resolve repeat can be async too ([05298b1](https://github.com/zxcvbn-ts/zxcvbn/commit/05298b107085dfd1ca7a1914f4ac81443dcd6a39))
+- **pwned:** use correct type imports path ([b2770cc](https://github.com/zxcvbn-ts/zxcvbn/commit/b2770cc4b7461f615f4f6199430d9db59b9aa565))
+- **translations:** transfere ZxcvbnOptions as parameter ([3ff0f75](https://github.com/zxcvbn-ts/zxcvbn/commit/3ff0f751890a24b8cbb39aad78875e13ed5e6b6d))
+
+### Features
+
+- **project:** Add HaveIBeenPwned matcher ([#66](https://github.com/zxcvbn-ts/zxcvbn/issues/66)) ([5c4141c](https://github.com/zxcvbn-ts/zxcvbn/commit/5c4141cd34f6566fe753ce76572f74bb8229b414))
+- **pwned:** use try/catch for TextEncoder ([0a46bf7](https://github.com/zxcvbn-ts/zxcvbn/commit/0a46bf7a0f6f08059f60efac145be15043c8540d))
+
+### Reverts
+
+- Revert "Publish" ([e266524](https://github.com/zxcvbn-ts/zxcvbn/commit/e266524f4fd25684ae9dded81593e7e04a1eef97))
+
 # 2.1.0 (2023-04-12)
 
 ### Bug Fixes

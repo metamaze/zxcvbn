@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 4.0.0 (2023-04-12)
+
+### Bug Fixes
+
+- **dictionaries:** delet userInput from lang dictionaries ([a8aee74](https://github.com/jeromes80/zxcvbn/commit/a8aee74aec1e01e8c9948a10be83422ba0ed1fbb))
+
+- feat!: makes language packages tree shakeable (#176) ([3be6ae2](https://github.com/jeromes80/zxcvbn/commit/3be6ae2ae3f4ff7ade756df50c60274cbc2b0e20)), closes [#176](https://github.com/jeromes80/zxcvbn/issues/176) [#175](https://github.com/jeromes80/zxcvbn/issues/175)
+
+### Features
+
+- **languages:** Add deduplication functionality ([#54](https://github.com/jeromes80/zxcvbn/issues/54)) ([d98c49f](https://github.com/jeromes80/zxcvbn/commit/d98c49f11f05109f16ac4d5fbdd8cb1c0805eb1d))
+- **languages:** add FR Dictionnary ([#30](https://github.com/jeromes80/zxcvbn/issues/30)) ([502bdcf](https://github.com/jeromes80/zxcvbn/commit/502bdcf007ace72f42ec8aca5e1ea3c69e319483))
+- **languages:** swap french firstnames with lastnames ([bb85a14](https://github.com/jeromes80/zxcvbn/commit/bb85a142ff851b6666561cde542d0136c039bd22))
+- **languages:** update dictionaries ([d3b0cd6](https://github.com/jeromes80/zxcvbn/commit/d3b0cd62c020e0a50a6fa3b00bb842d0dd3b1eb8))
+- **languages:** update dictionaries ([7f67d3a](https://github.com/jeromes80/zxcvbn/commit/7f67d3a71ef3b1136fc965c21d9febbfa3e74193))
+- **matcher:** Make matcher customizable ([#48](https://github.com/jeromes80/zxcvbn/issues/48)) ([8667485](https://github.com/jeromes80/zxcvbn/commit/866748556b576d15266725e44d6c99d38165cc95))
+- **project:** Add HaveIBeenPwned matcher ([#66](https://github.com/jeromes80/zxcvbn/issues/66)) ([5c4141c](https://github.com/jeromes80/zxcvbn/commit/5c4141cd34f6566fe753ce76572f74bb8229b414))
+- **translations:** improve user input feedback ([57ce211](https://github.com/jeromes80/zxcvbn/commit/57ce211883018e08a454b9dfc1983ac19ced9787))
+
+### Reverts
+
+- Revert "Publish" ([418514a](https://github.com/jeromes80/zxcvbn/commit/418514affd9f9c6ef22ae1ad6b1dcb0cff330ef7))
+
+### BREAKING CHANGES
+
+- Language packages no longer has a default export.
+
+Instead of importing language packages with
+`import package from '@zxcvbn-ts/language-en'`
+
+You will now have to import it either like this
+`import { dictionary, translation } from '@zxcvbn-ts/language-en'`
+
+or like this
+`import * as package from '@zxcvbn-ts/language-en'`
+
+The reason for the change is so that you can tree shake the
+dictionary and translations.
+
 # 3.0.0 (2023-04-12)
 
 ### Bug Fixes
