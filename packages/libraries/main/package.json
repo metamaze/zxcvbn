@@ -1,6 +1,6 @@
 {
   "name": "@metamaze/zxcvbn-core",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -36,5 +36,6 @@
     "scoring",
     "entropy",
     "bruteforce"
-  ]
+  ],
+  "gitHead": "da2094fcf4ab1a4cdec2c72b193e354f8bdc427e"
 }

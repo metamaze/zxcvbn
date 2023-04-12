@@ -1,6 +1,6 @@
 {
   "name": "@metamaze/zxcvbn-matcher-pwned",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -20,7 +20,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@metamaze/zxcvbn-core": "^5.0.0"
+    "@metamaze/zxcvbn-core": "^5.0.1"
   },
   "keywords": [
     "pwned",
@@ -34,5 +34,6 @@
     "scoring",
     "haveibeenpwned",
     "zxcvbn-ts"
-  ]
+  ],
+  "gitHead": "da2094fcf4ab1a4cdec2c72b193e354f8bdc427e"
 }
